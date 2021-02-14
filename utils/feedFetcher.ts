@@ -29,11 +29,6 @@ const fetchDependencies = async (username: string, repo: any) => {
 export const fetchRepos = async (params: any) => {
   const { queryKey, pageParam = 0 } = params;
 
-  console.log(
-    "FETCH REPO ENV VAR",
-    process.env.NEXT_PUBLIC_PERSONAL_ACCESS_TOKEN
-  );
-
   if (queryKey[1].length) {
     const repoRes = await fetch(
       `https://api.github.com/users/${queryKey[1]}/repos?page=${pageParam}&per_page=${PAGE_SIZE}&sort=updated`,

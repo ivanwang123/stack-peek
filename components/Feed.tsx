@@ -22,13 +22,11 @@ function Feed(props: PropType) {
     isFetchingNextPage,
   } = useInfiniteQuery(["repos", username], fetchRepos, {
     getNextPageParam: (lastPage, pages) => {
-      console.log("LASTPAGE", lastPage);
       if (!lastPage || lastPage.length === 0) return false;
       return pages.length + 1;
     },
     refetchOnWindowFocus: false,
   });
-  console.log(data);
 
   const loadMoreBtnRef = useRef<HTMLButtonElement>(null);
   useIntersectionObserver({
