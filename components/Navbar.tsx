@@ -6,7 +6,7 @@ function Navbar() {
       <h1>Stack Peek()</h1>
       <button
         type="button"
-        className="text-xs px-2 py-1 bg-foreground rounded ml-auto cursor-pointer hover:underline lg:hidden"
+        className="text-xs px-2 py-1 shadow-none rounded ml-auto cursor-pointer hover:underline lg:hidden"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         Back to top

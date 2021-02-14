@@ -49,7 +49,7 @@ function Feed(props: PropType) {
     );
 
   return (
-    <div className="w-full flex flex-col items-center mt-8">
+    <div className="w-full flex flex-col items-center mt-4">
       {/* {!data && (
         <h2 className="text-xl text-gray-400 font-normal text-center mt-12">
           <span className="block text-9xl text-gray-300">(;-;)</span>
@@ -68,7 +68,7 @@ function Feed(props: PropType) {
         </div>
       )}
       {data?.pages[0]?.length ? (
-        <h2 className="w-full text-gray-400 text-left mt-2 lg:mt-8">Repos</h2>
+        <h2 className="w-full text-gray-400 text-left lg:mt-12">Repos</h2>
       ) : null}
       {data?.pages.map((page: (RepoType | null)[] | null) => {
         if (page) {
