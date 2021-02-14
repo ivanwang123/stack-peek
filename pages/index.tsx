@@ -45,7 +45,7 @@ function IndexPage() {
   };
 
   return (
-    <Layout title="Stack Peek">
+    <Layout title={username ? `${username} | Stack Peek` : "Stack Peek"}>
       <Navbar />
       <div className="grid grid-cols-12 px-4 sm:px-24 md:px-36 lg:px-24 xl:px-36">
         <section className="col-span-12 lg:col-span-5 lg:pr-8">
