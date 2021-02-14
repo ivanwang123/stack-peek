@@ -82,7 +82,7 @@ function Feed(props: PropType) {
         return null;
       })}
       {data?.pages[0]?.length === 0 && didSearch && (
-        <h2 className="text-xl text-gray-400 font-normal text-center mt-12">
+        <h2 className="text-xl text-gray-400 font-normal text-center my-12">
           <span className="block text-9xl text-gray-300">(&gt;_&lt;)</span>
           <span className="block font-semibold mt-8">No repos found.</span>
         </h2>
