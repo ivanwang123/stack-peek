@@ -13,6 +13,7 @@ function IndexPage() {
 
   const handleSearch = async (e: FormEvent) => {
     e.preventDefault();
+    console.log("ENV VAR", process.env.NEXT_PUBLIC_PERSONAL_ACCESS_TOKEN);
     if (search.length) {
       fetch(`https://api.github.com/users/${search}`, {
         headers: {
