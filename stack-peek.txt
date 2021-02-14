@@ -7,6 +7,3 @@ TODO
 Get number of downloads for a package
 https://github.com/npm/registry/blob/master/docs/download-counts.md
 https://api.npmjs.org/downloads/point/{date}/{package}
-
-Personal access token
-af2cdfe4b2ca3859c6b3c3979beef02a031b8d83
