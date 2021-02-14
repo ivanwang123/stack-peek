@@ -10,6 +10,10 @@ const findPackage = async (
   repository: string
 ) => {
   if (level <= 2) {
+    console.log(
+      "FETCH PACKAGE ENV VAR",
+      process.env.NEXT_PUBLIC_PERSONAL_ACCESS_TOKEN
+    );
     try {
       const res = await fetch(
         `https://api.github.com/repos/${username}/${repository}/contents/${path}`,
