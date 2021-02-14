@@ -1,3 +1,3 @@
 # Stack Peek()
 
-See what stacks coders are using
+See what stacks other coders are using
