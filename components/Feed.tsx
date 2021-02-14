@@ -68,7 +68,7 @@ function Feed(props: PropType) {
         </div>
       )}
       {data?.pages[0]?.length ? (
-        <h2 className="w-full text-gray-400 text-left mt-2 lg:mt-4">Repos</h2>
+        <h2 className="w-full text-gray-400 text-left mt-2 lg:mt-8">Repos</h2>
       ) : null}
       {data?.pages.map((page: (RepoType | null)[] | null) => {
         if (page) {

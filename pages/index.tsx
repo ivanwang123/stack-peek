@@ -56,7 +56,7 @@ function IndexPage() {
             >
               <input
                 type="text"
-                className="w-full border border-r-0 border-border-color rounded-l focus:border-blue-500"
+                className="w-full border border-r-0 border-border-color rounded-l rounded-r-none focus:border-blue-500"
                 id="search"
                 name="search"
                 placeholder="Enter GitHub username"
