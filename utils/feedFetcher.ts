@@ -31,7 +31,7 @@ export const fetchRepos = async (params: any) => {
 
   if (queryKey[1].length) {
     const repoRes = await fetch(
-      `https://api.github.com/users/${queryKey[1]}/repos?page=${pageParam}&per_page=${PAGE_SIZE}&sort=updated`,
+      `https://api.github.com/users/${queryKey[1]}/repos?page=${pageParam}&per_page=${PAGE_SIZE}&sort=created`,
       {
         headers: {
           Authorization: `token ${process.env.NEXT_PUBLIC_PERSONAL_ACCESS_TOKEN}`,
