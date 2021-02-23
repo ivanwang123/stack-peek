@@ -14,6 +14,7 @@ module.exports = {
         "button-color": "#1074E7",
         link: "#0366D6",
         tag: "#F1F8FF",
+        logo: "#3E8AFF",
       },
     },
   },
